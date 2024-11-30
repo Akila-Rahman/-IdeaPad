@@ -26,21 +26,33 @@ h1 {
   padding: 10px;
   border-radius: 5px;
   min-height: 100px;
-  background-color: #fff;
+  background-color: #fff; /* Default background color */
 }
 
-button {
+.actions {
+  margin-top: 10px;
+}
+
+button, select, input[type="file"] {
   margin-top: 10px;
   padding: 10px 15px;
-  background-color: #007bff;
-  color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 
+button {
+  background-color: #007bff;
+  color: #fff;
+}
+
 button:hover {
   background-color: #0056b3;
+}
+
+select {
+  background-color: #fff;
+  border: 1px solid #ddd;
 }
 
 .notes {
@@ -61,4 +73,30 @@ button:hover {
 
 .note-actions button {
   margin-right: 5px;
+}
+
+img {
+  max-width: 300px;
+  max-height: 300px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.color-options {
+  margin-top: 20px;
+}
+
+.color-button {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: bold;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.color-button:hover {
+  transform: scale(1.1);
 }
