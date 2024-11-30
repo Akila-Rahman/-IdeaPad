@@ -10,12 +10,39 @@
   <div class="container">
     <header>
       <h1>IdeaPad</h1>
-      <p>Create, edit, and save your notes with rich text formatting.</p>
+      <p>Create, edit, and save your notes with rich text formatting and images.</p>
     </header>
     <main>
       <section class="editor">
+        <div>
+          <label for="noteHeadline">Headline:</label>
+          <input type="text" id="noteHeadline" placeholder="Enter headline (H1)">
+        </div>
         <div contenteditable="true" id="noteEditor" class="note-editor" placeholder="Type your note here..."></div>
-        <button id="saveButton">Save Note</button>
+        <div class="actions">
+          <button id="boldButton"><strong>B</strong></button>
+          <button id="highlightGreenButton" style="background-color: #8cff32;">Highlight Green</button>
+          <button id="highlightYellowButton" style="background-color: #fdff32;">Highlight Yellow</button>
+          <select id="fontColorSelect">
+	   <option value="black">Black</option>
+
+            <option value="red">Red</option>
+            <option value="black">Black</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+          </select>
+          <input type="file" id="imageUploader" accept="image/*">
+          <button id="saveButton">Save Note</button>
+        </div>
+      </section>
+      <section class="customization">
+        <h3>Change Note Background Color:</h3>
+        <div class="color-options">
+          <button class="color-button" data-color="#FFAEBC" style="background-color: #FFAEBC;">Hot Pink</button>
+          <button class="color-button" data-color="#A0E7E5" style="background-color: #A0E7E5;">Tiffany Blue</button>
+          <button class="color-button" data-color="#B4F8C8" style="background-color: #B4F8C8;">Mint</button>
+          <button class="color-button" data-color="#FBE7C6" style="background-color: #FBE7C6;">Yellow</button>
+        </div>
       </section>
       <section class="notes">
         <h2>Saved Notes</h2>
