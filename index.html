@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IdeaPad - Note-Taking App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>IdeaPad</h1>
+      <p>Create, edit, and save your notes with rich text formatting.</p>
+    </header>
+    <main>
+      <section class="editor">
+        <div contenteditable="true" id="noteEditor" class="note-editor" placeholder="Type your note here..."></div>
+        <button id="saveButton">Save Note</button>
+      </section>
+      <section class="notes">
+        <h2>Saved Notes</h2>
+        <div id="notesContainer"></div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 IdeaPad. All rights reserved.</p>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
